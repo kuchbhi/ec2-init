@@ -1,13 +1,20 @@
 #Start from Mint Ubuntu 12.04.2 LTS
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo apt-get install -y gcc-c++ make
+sudo apt-get install -y gcc gcc-c++
 sudo apt-get install -y openssl-devel
+sudo apt-get install -y build-essential
 sudo apt-get install -y git
+sudo apt-get install -y libpcre3 libpcre3-dev zlib1g-dev
+sudo apt-get install -y libssl-dev
 
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update -y
 sudo apt-get install -y nodejs
 
 sudo reboot
+
+#Install latest Nginx 1.4.1
+wget http://nginx.org/download/nginx-1.4.1.tar.gz
+tar -xzf nginx-1.4.1.tar.gz 
 
